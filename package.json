@@ -1,0 +1,23 @@
+{
+  "name": "romans",
+  "version": "1.0.0",
+	"main": "./build/index.js",
+	"type": "module",
+	"author": "Fedor Kuznetsov <thanatocs@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"devDependencies": {
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"exports": {
+		".": {
+			"import": "./build/index.js",
+			"types": "./build/index.d.ts"
+		},
+		"./prototype": {
+			"import": "./build/prototype.js",
+			"types": "./build/prototype.d.ts"
+		}
+	}
+}
